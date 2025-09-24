@@ -12,9 +12,7 @@ jobs:
       group: proxy-scan
 
     steps:
-      - uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.GIT_TOKEN }}
+      - uses: actions/checkout@v5
       - name: Use Bun
         uses: oven-sh/setup-bun@v2
       - name: Start Scan
